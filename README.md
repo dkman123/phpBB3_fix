@@ -1,6 +1,12 @@
 # phpBB3_fix
 fix for when you have the Configurator expected "DOMElement, null given" error
 
+WARNING: This will make it run, but BBCode for IMG, URL, TextColor, and Smilies will not work.
+
+I went a different direction.  Don't use this.
+
+If you run into this bug upgrade to PHP 7.3 instead.  I hear that the install doesn't like running on php 7.3 yet, but installing on 7.2 then upgrading to 7.3 worked fine for me.
+
 The full error looks like this
 ```
 Fatal error: Uncaught TypeError: Argument 1 passed to s9e\TextFormatter\Configurator\TemplateNormalizations\AbstractNormalization::normalize() m
